@@ -1,4 +1,3 @@
-import PageHero from "../components/shared/PageHero";
 import bannerImg from "../assets/banner-new-2.png";
 import img1 from "../assets/banner-1.png";
 import img2 from "../assets/banner-2.png";
