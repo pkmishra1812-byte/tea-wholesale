@@ -18,7 +18,7 @@ const products = [
     title: "Spices",
     desc: "Our spice range spans whole, ground, and blended varieties — from the bold warmth of Assam turmeric to the floral notes of Munnar cardamom. Sourced directly from growers for unmatched freshness.",
     image: spiceImg,
-    link: "/our-offering/kitchen-products/spices",
+    link: "/our-offering/kitchen-products/rice-pulses-spices",
   },
   {
     title: "Soya",
@@ -30,13 +30,13 @@ const products = [
     title: "Cooking Oils",
     desc: "Pure and refined cooking oils processed under strict quality standards — consistent purity, neutral flavour, and high smoke point for bulk supply to hotels, restaurants, and packaged food producers.",
     image: oilImg,
-    link: "/our-offering/kitchen-products/oil",
+    link: "/our-offering/kitchen-products/ghee",
   },
   {
     title: "Grains",
     desc: "Premium-grade rice, pulses, and cereals sourced from trusted farms and processed to meet bulk supply standards — consistent quality, authentic origin, and dependable delivery for your business.",
     image: grainsImg,
-    link: "/our-offering/kitchen-products/grains",
+    link: "/our-offering/kitchen-products/staples",
   },
   {
     title: "Baby Care",

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import productImg from "../../assets/teafarming.png";
 
 export default function InnovationSection() {
@@ -58,12 +59,12 @@ export default function InnovationSection() {
                 solutions that reduce our environmental footprint without
                 compromising quality.
               </p>
-              <a
-                href="/innovation"
+              <Link
+                to="/innovation/r-d"
                 className="inline-block self-start mt-6 lg:mt-8 px-7 py-3 rounded-full bg-brand text-white font-body font-bold text-sm tracking-wide hover:brightness-110 transition-all duration-300"
               >
                 Find out more
-              </a>
+              </Link>
             </div>
 
             <div className="h-64 md:h-full min-h-[280px]">

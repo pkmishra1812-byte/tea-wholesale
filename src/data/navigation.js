@@ -20,10 +20,10 @@ export const NAV_LINKS = [
         label: "Foods",
         path: "/our-offering/kitchen-products",
         items: [
-          { label: "Spices", path: "/our-offering/kitchen-products/spices" },
           { label: "Soya", path: "/our-offering/kitchen-products/soya" },
-          { label: "Oil", path: "/our-offering/kitchen-products/oil" },
-          { label: "Grains", path: "/our-offering/kitchen-products/grains" },
+          { label: "Ghee", path: "/our-offering/kitchen-products/ghee" },
+          { label: "Staples", path: "/our-offering/kitchen-products/staples" },
+          { label: "Rice, Pulses and Spices", path: "/our-offering/kitchen-products/rice-pulses-spices" },
         ],
       },
       {
@@ -64,10 +64,10 @@ export const MEGA_MENU_CATEGORIES = [
     label: "Foods",
     path: "/our-offering/kitchen-products",
     subItems: [
-      { label: "Spices", path: "/our-offering/kitchen-products/spices" },
       { label: "Soya", path: "/our-offering/kitchen-products/soya" },
-      { label: "Oil", path: "/our-offering/kitchen-products/oil" },
-      { label: "Grains", path: "/our-offering/kitchen-products/grains" },
+      { label: "Ghee", path: "/our-offering/kitchen-products/ghee" },
+      { label: "Staples", path: "/our-offering/kitchen-products/staples" },
+      { label: "Rice, Pulses and Spices", path: "/our-offering/kitchen-products/rice-pulses-spices" },
     ],
   },
   {

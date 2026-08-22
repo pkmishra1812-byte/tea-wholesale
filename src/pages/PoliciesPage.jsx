@@ -1,7 +1,6 @@
 // src/pages/PoliciesPage.jsx
 import { useState } from "react";
 import bannerImg from "../assets/banner-new-1.png";
-import PolicyFeature from "../components/shared/PolicyFeature";
 
 const sections = [
   {
@@ -90,24 +89,6 @@ We value your feedback and use it continuously to improve our products and servi
   },
 ];
 
-const policyHighlights = [
-  {
-    title: "Transparent Practices",
-    description: "Every policy is designed with clarity, ensuring you understand your rights and our commitments without legal jargon.",
-    icon: "M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
-  },
-  {
-    title: "Quality Assurance",
-    description: "Our return and refund policies back the quality of every product we deliver. Your satisfaction drives everything we do.",
-    icon: "M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
-  },
-  {
-    title: "Secure Transactions",
-    description: "From data privacy to payment security, we employ industry-standard encryption and security protocols to protect you.",
-    icon: "M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z",
-  },
-];
-
 export default function PoliciesPage() {
   const [activeTab, setActiveTab] = useState(sections[0].id);
 
@@ -131,23 +112,6 @@ export default function PoliciesPage() {
           <h1 className="font-display text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-5 drop-shadow-2xl">
             Our Policies
           </h1>
-        </div>
-      </section>
-
-      {/* ── Policy Highlights ── */}
-      <section className="relative py-16 lg:py-20 bg-white">
-        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#0d1b4c]/5 to-transparent" />
-        <div className="relative max-w-screen-xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-[#0057A0] text-2xl lg:text-3xl font-bold">
-              Built on Trust, Backed by Commitment
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            {policyHighlights.map((item, i) => (
-              <PolicyFeature key={i} {...item} />
-            ))}
-          </div>
         </div>
       </section>
 

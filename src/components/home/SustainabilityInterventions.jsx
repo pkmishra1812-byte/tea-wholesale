@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import bannerNew1 from "../../assets/banner-new-1.png";
 import bannerNew2 from "../../assets/banner-new-2.png";
 import bannerNew3 from "../../assets/banner-new-3.png";
+import teafarmingImg from "../../assets/teafarming.png";
 
 const interventionData = [
   {
@@ -19,7 +20,48 @@ const interventionData = [
     heading: "Talent",
     subtitle: "Creating a Workforce for Tomorrow",
   },
+  {
+    img: teafarmingImg,
+    heading: "Community Empowerment",
+    subtitle: "Uplifting Lives Across Our Value Chain",
+  },
 ];
+
+function InterventionCard({ card, index, visible }) {
+  return (
+    <div
+      className={`group bg-white sm:rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col ${
+        visible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+      }`}
+      style={{
+        transitionDelay: `${index * 150}ms`,
+        transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+      }}
+    >
+      <div className="aspect-[4/3] w-full overflow-hidden">
+        <img
+          src={card.img}
+          alt={card.heading}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-col flex-1 p-6 lg:p-8">
+        <h3 className="font-body text-brand text-xl lg:text-2xl font-bold leading-tight mb-2">
+          {card.heading}
+        </h3>
+        <p className="font-body text-gray-500 text-sm lg:text-base mb-6">
+          {card.subtitle}
+        </p>
+        <div className="mt-auto">
+          <span className="inline-flex items-center gap-1.5 font-body text-sm font-bold text-brand group-hover:text-brand/80 transition-colors">
+            Know more
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function SustainabilityInterventions() {
   const [visible, setVisible] = useState(false);
@@ -43,6 +85,21 @@ export default function SustainabilityInterventions() {
 
   return (
     <section className="pt-10 lg:pt-14 pb-20 lg:pb-24 bg-white" ref={ref}>
+      <style>{`
+        @keyframes marqueeRTL {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+        .marquee-rtl {
+          animation: marqueeRTL 22s linear infinite;
+        }
+        .marquee-rtl:hover {
+          animation-play-state: paused;
+        }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      `}</style>
+
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         <h2
           className={`font-display text-brand text-3xl lg:text-4xl leading-tight font-bold text-center mb-3 lg:mb-4 transition-all duration-700 ${
@@ -58,42 +115,26 @@ export default function SustainabilityInterventions() {
         >
           Rooted in Nature, Committed to future
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        {/* ── Mobile: auto-scrolling carousel (right to left) ── */}
+        <div className="sm:hidden -mx-6 overflow-x-auto scrollbar-hide">
+          <div className="marquee-rtl flex w-max">
+            {[0, 1].map((copy) => (
+              <div key={copy} aria-hidden={copy === 1} className="flex gap-5 pr-5 px-3">
+                {interventionData.map((card, i) => (
+                  <div key={`${copy}-${card.heading}`} className="w-[70vw] max-w-[320px] shrink-0">
+                    <InterventionCard card={card} index={i} visible={visible} />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ── Tablet / Desktop: grid ── */}
+        <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {interventionData.map((card, i) => (
-            <div
-              key={card.heading}
-               className={`group bg-white sm:rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col ${
-                visible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
-              style={{
-                transitionDelay: `${i * 150}ms`,
-                transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
-            >
-              <div className="aspect-[4/3] w-full overflow-hidden">
-                <img
-                  src={card.img}
-                  alt={card.heading}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="flex flex-col flex-1 p-6 lg:p-8">
-                <h3 className="font-body text-brand text-xl lg:text-2xl font-bold leading-tight mb-2">
-                  {card.heading}
-                </h3>
-                <p className="font-body text-gray-500 text-sm lg:text-base mb-6">
-                  {card.subtitle}
-                </p>
-                <div className="mt-auto">
-                  <span className="inline-flex items-center gap-1.5 font-body text-sm font-bold text-brand group-hover:text-brand/80 transition-colors">
-                    Know more
-                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+            <InterventionCard key={card.heading} card={card} index={i} visible={visible} />
           ))}
         </div>
       </div>

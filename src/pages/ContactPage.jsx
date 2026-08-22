@@ -56,7 +56,7 @@ export default function ContactPage() {
 
       {/* ── Get In Touch Section ── */}
       <section className="relative z-20 pb-20 lg:pb-28"
-        style={{ backgroundColor: "#F5EFE6", position: "relative", top: "-42px" }}>
+        style={{ backgroundColor: "#F5EFE6", position: "relative", top: "-35px" }}>
         <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
           <div className="bg-white sm:rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] p-8 sm:p-10 lg:p-14">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">

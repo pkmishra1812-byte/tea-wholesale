@@ -72,16 +72,16 @@ export default function Footer() {
         </div>
 
         {/* Map — after Information */}
-        <div>
+        <div className="flex flex-col">
           <h4 className="font-display text-cream text-sm tracking-widest uppercase mb-4">
             Our Location
           </h4>
-          <div className="sm:rounded-lg overflow-hidden border border-cream/10">
+          <div className="flex-1 sm:rounded-lg overflow-hidden border border-cream/10 min-h-[220px]">
             <iframe
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Indian+Soya+%26+Spice+Industries+Bhatra+Ghat+Bisfi+Bihar+847122&zoom=15"
               width="100%"
-              height="220"
-              style={{ border: 0, filter: "grayscale(60%) contrast(1.1)" }}
+              height="100%"
+              style={{ border: 0, display: "block", width: "100%", height: "100%", filter: "grayscale(60%) contrast(1.1)" }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

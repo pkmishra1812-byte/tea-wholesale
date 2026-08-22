@@ -14,15 +14,6 @@ export const businesses = [
     knowMore: "/businesses/equipments",
   },
   {
-    id: "services",
-    label: "Our Services",
-    name: "Our Services",
-    heading: "Services that go beyond products",
-    paragraph:
-      "Beyond manufacturing, we offer end-to-end services that support every step of the value chain — from sourcing and custom blending to packaging, private labelling and dependable distribution. Our teams work closely with partners to deliver consistent quality, on time, every time.",
-    image: servicesImage,
-  },
-  {
     id: "equipments",
     label: "Equipments",
     name: "Equipments",
@@ -31,5 +22,14 @@ export const businesses = [
     paragraph:
       "From the kitchen to the workplace, our equipments division delivers dependable, thoughtfully engineered products built to last. Every unit is crafted with precision, safety and the same uncompromising quality that defines everything we make.",
     image: equipmentsImage,
+  },
+  {
+    id: "services",
+    label: "Our Services",
+    name: "Our Services",
+    heading: "Services that go beyond products",
+    paragraph:
+      "Beyond manufacturing, we offer end-to-end services that support every step of the value chain — from sourcing and custom blending to packaging, private labelling and dependable distribution. Our teams work closely with partners to deliver consistent quality, on time, every time.",
+    image: servicesImage,
   },
 ];

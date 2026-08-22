@@ -92,7 +92,7 @@ export default function BusinessAtGlance() {
                     Indian Soya &amp; Spice Industries is more than a company — it is a promise that quietly resides in your kitchen pantry, in the products you trust for your children, and on your bathroom shelf. Behind every product lies a single conviction: quality is not a choice, it is a responsibility.
                   </p>
                   <p className="font-body text-[#5A6478] text-[15px] leading-[1.7] tracking-wide">
-                    In just three years, we have risen to become one of India&rsquo;s Top 20 FMCG companies — a journey that was never easy, but always clear in purpose. Our foundation rests on one simple yet powerful belief: everyday essentials deserve the same care, craftsmanship, and quality as luxury goods.
+                    In just three years, we have risen to become one of India&rsquo;s Top FMCG companies — a journey that was never easy, but always clear in purpose. Our foundation rests on one simple yet powerful belief: everyday essentials deserve the same care, craftsmanship, and quality as luxury goods.
                   </p>
                   <p className="font-body text-[#5A6478] text-[15px] leading-[1.7] tracking-wide">
                     This growth is no accident. It is the outcome of one unwavering principle: never compromise on quality, never take trust for granted. Behind every batch, every pack, every launch lies a single question — is this good enough for our own home? Only when the answer is yes does a product make its way into yours.

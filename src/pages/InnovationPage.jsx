@@ -1,7 +1,6 @@
 // src/pages/InnovationPage.jsx
-import companyBanner from "../assets/tata-banner.jpg";
 import productImg from "../assets/teafarming.png";
-import AboutSubNav from "../components/shared/AboutSubNav";
+import innovationBanner from "../assets/invation.png";
 
 const innovationPillars = [
   {
@@ -48,7 +47,7 @@ export default function InnovationPage() {
       {/* ── Banner ── */}
       <div className="w-full">
         <img
-          src={companyBanner}
+          src={innovationBanner}
           alt="Innovation at ISSI"
           className="w-full h-auto object-cover max-h-[400px] lg:max-h-[500px]"
         />
@@ -65,8 +64,6 @@ export default function InnovationPage() {
 
       {/* ── Spacing ── */}
       <div className="bg-white h-10 lg:h-16" />
-
-      <AboutSubNav />
 
       {/* ── Innovation Overview ── */}
       <section className="bg-white py-16 lg:py-24">

@@ -115,7 +115,7 @@ export default function CompanyGlance() {
             <p className="font-body text-white/85 text-base lg:text-lg leading-[1.7] tracking-wide max-w-[560px]">
               Indian Soya &amp; Spice Industries is more than a company — it is a
               promise that quietly resides in every Indian home. Built on a single
-              conviction, we have risen to become one of India&rsquo;s Top 20 FMCG
+              conviction, we have risen to become one of India&rsquo;s Top FMCG
               companies, delivering everyday essentials with the same care,
               craftsmanship and quality as luxury goods.
             </p>

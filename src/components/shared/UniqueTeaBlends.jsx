@@ -46,8 +46,6 @@ const COLLECTIONS = [
   },
 ];
 
-const leafPattern = `url("data:image/svg+xml,%3Csvg width='220' height='220' viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A24B' stroke-opacity='0.09' stroke-width='2'%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z'/%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z' transform='translate(0 50)'/%3E%3Cpath d='M110 30 Q140 60 110 92 Q80 60 110 30Z'/%3E%3Cpath d='M150 120 Q172 145 150 168 Q128 145 150 120Z'/%3E%3C/g%3E%3C/svg%3E")`;
-
 function ProductCard({ product, index, revealed }) {
   const { formatPrice } = useCurrency();
   return (
@@ -105,7 +103,7 @@ export default function UniqueTeaBlends() {
   return (
     <section
       className="py-16 lg:py-24"
-      style={{ backgroundColor: "#FDF6EC", backgroundImage: leafPattern }}
+      style={{ backgroundColor: "#FDF6EC" }}
     >
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         <h2 className="font-display text-black text-3xl lg:text-4xl font-bold leading-tight text-center mb-10 lg:mb-12">
@@ -129,7 +127,12 @@ export default function UniqueTeaBlends() {
           ))}
         </div>
 
-        <div key={active.id} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 lg:gap-6">
+        <div
+          key={active.id}
+          className={`grid grid-cols-2 sm:grid-cols-3 gap-5 lg:gap-6 ${
+            active.products.length > 3 ? "lg:grid-cols-6" : "mx-auto w-fit"
+          }`}
+        >
           {active.products.map((product, idx) => (
             <ProductCard key={product.name} product={product} index={idx} revealed={revealed} />
           ))}

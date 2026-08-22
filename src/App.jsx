@@ -12,20 +12,23 @@ const OurVisionPage = lazy(() => import("./pages/OurVisionPage"));
 const HistoryEvolutionPage = lazy(() => import("./pages/HistoryEvolutionPage"));
 const SustainabilityPage = lazy(() => import("./pages/SustainabilityPage"));
 const InnovationPage = lazy(() => import("./pages/InnovationPage"));
+const RnDPage = lazy(() => import("./pages/RnDPage"));
 const NewsCenterPage = lazy(() => import("./pages/NewsCenterPage"));
 const ISSINewsPage = lazy(() => import("./pages/ISSINewsPage"));
 const EverydayUpdatesPage = lazy(() => import("./pages/EverydayUpdatesPage"));
 const OurOfferingPage = lazy(() => import("./pages/OurOfferingPage"));
 const TeaPage = lazy(() => import("./pages/TeaPage"));
 const TeaMachineryPage = lazy(() => import("./pages/TeaMachineryPage"));
-const SpicesPage = lazy(() => import("./pages/SpicesPage"));
+const RicePulsesSpicesPage = lazy(() => import("./pages/RicePulsesSpicesPage"));
 const BabyCarePage = lazy(() => import("./pages/BabyCarePage"));
 const BabyCareProductPage = lazy(() => import("./pages/BabyCareProductPage"));
 const BabyCareAccessoriesPage = lazy(() => import("./pages/BabyCareAccessoriesPage"));
 const KitchenProductsPage = lazy(() => import("./pages/KitchenProductsPage"));
 const SoyaPage = lazy(() => import("./pages/SoyaPage"));
-const OilPage = lazy(() => import("./pages/OilPage"));
-const GrainsPage = lazy(() => import("./pages/GrainsPage"));
+const NutrelaSoyaNuggetsPage = lazy(() => import("./pages/NutrelaSoyaNuggetsPage"));
+const ShreemanMaxxNutsPage = lazy(() => import("./pages/ShreemanMaxxNutsPage"));
+const GheePage = lazy(() => import("./pages/GheePage"));
+const StaplesPage = lazy(() => import("./pages/StaplesPage"));
 const BeautyProductsPage = lazy(() => import("./pages/BeautyProductsPage"));
 const FemaleBeautyPage = lazy(() => import("./pages/FemaleBeautyPage"));
 const MaleBeautyPage = lazy(() => import("./pages/MaleBeautyPage"));
@@ -67,6 +70,7 @@ export default function App() {
               <Route path="/our-vision-mission-values" element={<OurVisionPage />} />
               <Route path="/sustainability" element={<SustainabilityPage />} />
               <Route path="/innovation" element={<InnovationPage />} />
+              <Route path="/innovation/r-d" element={<RnDPage />} />
               <Route path="/media-center/news-center" element={<NewsCenterPage />} />
               <Route path="/media-center/issi-news" element={<ISSINewsPage />} />
               <Route path="/media-center/everyday-updates" element={<EverydayUpdatesPage />} />
@@ -74,10 +78,12 @@ export default function App() {
               <Route path="/our-offering/tea" element={<TeaPage />} />
               <Route path="/our-offering/tea-machinery" element={<TeaMachineryPage />} />
               <Route path="/our-offering/kitchen-products" element={<KitchenProductsPage />} />
-              <Route path="/our-offering/kitchen-products/spices" element={<SpicesPage />} />
+              <Route path="/our-offering/kitchen-products/rice-pulses-spices" element={<RicePulsesSpicesPage />} />
               <Route path="/our-offering/kitchen-products/soya" element={<SoyaPage />} />
-              <Route path="/our-offering/kitchen-products/oil" element={<OilPage />} />
-              <Route path="/our-offering/kitchen-products/grains" element={<GrainsPage />} />
+              <Route path="/our-offering/kitchen-products/soya/nutrela-soya-nuggets" element={<NutrelaSoyaNuggetsPage />} />
+              <Route path="/our-offering/kitchen-products/soya/shreeman-maxx-nuts" element={<ShreemanMaxxNutsPage />} />
+              <Route path="/our-offering/kitchen-products/ghee" element={<GheePage />} />
+              <Route path="/our-offering/kitchen-products/staples" element={<StaplesPage />} />
               <Route path="/our-offering/baby-care" element={<BabyCarePage />} />
               <Route path="/our-offering/baby-care/product" element={<BabyCareProductPage />} />
               <Route path="/our-offering/baby-care/accessories" element={<BabyCareAccessoriesPage />} />

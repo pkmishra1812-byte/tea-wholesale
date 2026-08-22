@@ -6,9 +6,9 @@ import banner4 from "../../assets/banner-new-4.png";
 
 const categories = [
   { name: "Tea", slug: "/our-offering/tea", img: banner1, brief: "Premium loose-leaf teas sourced from India's finest estates." },
-  { name: "Foods", slug: "/our-offering/kitchen-products/spices", img: banner2, brief: "Authentic whole & ground spices for every kitchen." },
-  { name: "Beauty & Wellbeing", slug: "/our-offering/beauty-products", img: banner4, brief: "Natural beauty essentials crafted with traditional wisdom." },
-  { name: "Baby Care", slug: "/our-offering/baby-care", img: banner3, brief: "Gentle, toxin-free care products for your little one." },
+  { name: "Foods", slug: "/our-offering/kitchen-products/rice-pulses-spices", img: banner2, brief: "Authentic whole & ground spices for every kitchen." },
+  { name: "Beauty & Wellbeing", slug: "/our-offering/baby-care", img: banner3, brief: "Gentle, toxin-free care products for your little one." },
+  { name: "Baby Care", slug: "/our-offering/beauty-products", img: banner4, brief: "Natural beauty essentials crafted with traditional wisdom." },
 ];
 
 export default function TeaCategories() {
@@ -27,7 +27,7 @@ export default function TeaCategories() {
         <div className="flex gap-5 lg:gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide [&::-webkit-scrollbar]:hidden">
           {categories.map((cat) => (
             <Link
-              key={cat.name}
+              key={cat.slug}
               to={cat.slug}
                className="group shrink-0 w-[75vw] sm:w-[45vw] lg:w-[23%] snap-start sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col bg-white"
             >

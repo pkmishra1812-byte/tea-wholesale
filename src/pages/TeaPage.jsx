@@ -4,6 +4,7 @@ import BrandStory from "../components/shared/BrandStory";
 import BestSellerSection from "../components/shared/BestSellerSection";
 import CategoryShowcase from "../components/shared/CategoryShowcase";
 import OurPromise from "../components/shared/OurPromise";
+import ExploreCategories from "../components/shared/ExploreCategories";
 import banner1 from "../assets/banner-1.png";
 import banner2 from "../assets/banner-2.png";
 
@@ -26,6 +27,9 @@ export default function TeaPage() {
       <OurPromise />
       <BestSellerSection />
       <CategoryShowcase />
+
+      {/* ── Explore Categories Carousel ── */}
+      <ExploreCategories />
     </>
   );
 }
