@@ -45,10 +45,10 @@ export default function KitchenProductsPage() {
       </div>
 
       {/* ── Statement Section ── */}
-      <section className="bg-white py-16 lg:py-24 border-t border-tea-100/60">
+      <section className="bg-white pt-16 lg:pt-24 pb-10 lg:pb-12 border-t border-tea-100/60">
         <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[45fr_55fr] gap-10 lg:gap-16 items-start">
-            <h2 className="font-display text-[#1a1a2e] text-3xl sm:text-4xl xl:text-[42px] font-normal leading-[1.3]">
+            <h2 className="font-display text-brand text-2xl lg:text-3xl leading-tight font-bold">
               After all, a healthy nation is one that eats healthy.
             </h2>
             <p className="font-body text-[#666] text-lg xl:text-xl leading-[1.6]">
@@ -59,9 +59,9 @@ export default function KitchenProductsPage() {
       </section>
 
       {/* ── Our Range of Products ── */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-white pt-10 lg:pt-14 pb-16 lg:pb-24">
         <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
-          <h2 className="font-body text-[#0057A0] text-[26px] sm:text-[28px] lg:text-[32px] font-medium text-center mb-12 lg:mb-16 tracking-tight">
+          <h2 className="font-display text-brand text-3xl lg:text-4xl leading-tight font-bold text-center mb-12 lg:mb-16">
             A Curated Range of Everyday Excellence
           </h2>
 
@@ -91,9 +91,9 @@ export default function KitchenProductsPage() {
                   </p>
                   <Link
                     to={item.path}
-                    className="mt-auto pt-6 inline-flex items-center gap-1.5 font-body text-sm font-bold text-[#a02c2c] hover:text-[#7d1f1f] transition-colors duration-300 group/link w-fit"
+                    className="mt-auto pt-6 inline-flex items-center gap-1.5 font-body text-sm font-bold text-[#0057A0] hover:text-[#003d73] transition-colors duration-300 group/link w-fit"
                   >
-                    <span className="border-b border-transparent group-hover:border-[#7d1f1f] transition-colors duration-300 pb-0.5">
+                    <span className="border-b border-transparent group-hover:border-[#003d73] transition-colors duration-300 pb-0.5">
                       View Products
                     </span>
                     <svg

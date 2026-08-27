@@ -19,20 +19,18 @@ const CATEGORIES = [
   { name: "Artisanal Teas", img: img8 },
 ];
 
-const leafPattern = `url("data:image/svg+xml,%3Csvg width='220' height='220' viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A24B' stroke-opacity='0.09' stroke-width='2'%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z'/%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z' transform='translate(0 50)'/%3E%3Cpath d='M110 30 Q140 60 110 92 Q80 60 110 30Z'/%3E%3Cpath d='M150 120 Q172 145 150 168 Q128 145 150 120Z'/%3E%3C/g%3E%3C/svg%3E")`;
-
 function CategoryShowcase() {
   return (
     <section
       className="pt-10 lg:pt-14 pb-20 lg:pb-28"
-      style={{ backgroundColor: "#FDF6EC", backgroundImage: leafPattern }}
+      style={{ backgroundColor: "#FDF6EC" }}
     >
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         <h2 className="font-display text-black text-3xl lg:text-4xl font-bold text-center leading-tight mb-10 lg:mb-12">
           Explore The Diversity
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-3.5">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-3.5">
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.name}

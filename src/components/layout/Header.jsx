@@ -47,6 +47,7 @@ export default function Header() {
             hidden ? "lg:max-h-0" : "lg:max-h-32"
           }`}
         >
+
         {/* ════════════════════════════════════════
             TOP ROW — Logo + Social icons + Cart
         ════════════════════════════════════════ */}

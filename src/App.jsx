@@ -20,7 +20,6 @@ const OurOfferingPage = lazy(() => import("./pages/OurOfferingPage"));
 const TeaPage = lazy(() => import("./pages/TeaPage"));
 const TeaMachineryPage = lazy(() => import("./pages/TeaMachineryPage"));
 const RicePulsesSpicesPage = lazy(() => import("./pages/RicePulsesSpicesPage"));
-const BabyCarePage = lazy(() => import("./pages/BabyCarePage"));
 const BabyCareProductPage = lazy(() => import("./pages/BabyCareProductPage"));
 const BabyCareAccessoriesPage = lazy(() => import("./pages/BabyCareAccessoriesPage"));
 const KitchenProductsPage = lazy(() => import("./pages/KitchenProductsPage"));
@@ -38,6 +37,8 @@ const SpiceBlendsPage = lazy(() => import("./pages/SpiceBlendsPage"));
 const BabyMassageOilPage = lazy(() => import("./pages/BabyMassageOilPage"));
 const BabyPowderPage = lazy(() => import("./pages/BabyPowderPage"));
 const BabyWashPage = lazy(() => import("./pages/BabyWashPage"));
+const PreparingForBabyPage = lazy(() => import("./pages/PreparingForBabyPage"));
+const CaringForBabyPage = lazy(() => import("./pages/CaringForBabyPage"));
 const WholesalePage = lazy(() => import("./pages/WholesalePage"));
 const BlogPage = lazy(() => import("./pages/BlogPage"));
 const NewsPage = lazy(() => import("./pages/NewsPage"));
@@ -84,12 +85,14 @@ export default function App() {
               <Route path="/our-offering/kitchen-products/soya/shreeman-maxx-nuts" element={<ShreemanMaxxNutsPage />} />
               <Route path="/our-offering/kitchen-products/ghee" element={<GheePage />} />
               <Route path="/our-offering/kitchen-products/staples" element={<StaplesPage />} />
-              <Route path="/our-offering/baby-care" element={<BabyCarePage />} />
+              <Route path="/our-offering/baby-care" element={<BabyCareProductPage />} />
               <Route path="/our-offering/baby-care/product" element={<BabyCareProductPage />} />
               <Route path="/our-offering/baby-care/accessories" element={<BabyCareAccessoriesPage />} />
               <Route path="/our-offering/baby-care/product/massage-oil" element={<BabyMassageOilPage />} />
               <Route path="/our-offering/baby-care/product/baby-powder" element={<BabyPowderPage />} />
               <Route path="/our-offering/baby-care/product/baby-wash" element={<BabyWashPage />} />
+              <Route path="/our-offering/baby-care/preparing-for-your-baby" element={<PreparingForBabyPage />} />
+              <Route path="/our-offering/baby-care/caring-for-your-baby" element={<CaringForBabyPage />} />
               <Route path="/our-offering/beauty-products" element={<BeautyProductsPage />} />
               <Route path="/our-offering/beauty-products/female" element={<FemaleBeautyPage />} />
               <Route path="/our-offering/beauty-products/male" element={<MaleBeautyPage />} />

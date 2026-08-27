@@ -4,7 +4,7 @@ import companyBanner from "../assets/tata-banner.jpg";
 import productImg from "../assets/teafarming.png";
 import teamImg from "../assets/carrers image.png";
 import labImg from "../assets/invation.png";
-import rndLabImg from "../assets/transprate.png";
+import rndLabImg from "../assets/teafarming.png";
 
 const capitalSlides = [
   {

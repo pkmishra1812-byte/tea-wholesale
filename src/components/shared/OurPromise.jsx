@@ -2,8 +2,6 @@ import React from "react";
 
 const OLIVE = "#7C8A45";
 
-const leafPattern = `url("data:image/svg+xml,%3Csvg width='220' height='220' viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A24B' stroke-opacity='0.09' stroke-width='2'%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z'/%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z' transform='translate(0 50)'/%3E%3Cpath d='M110 30 Q140 60 110 92 Q80 60 110 30Z'/%3E%3Cpath d='M150 120 Q172 145 150 168 Q128 145 150 120Z'/%3E%3C/g%3E%3C/svg%3E")`;
-
 const promises = [
   {
     title: "Pure & Premium Tea Leaves",
@@ -55,7 +53,7 @@ function OurPromise() {
   return (
     <section
       className="relative pt-10 lg:pt-14 pb-10 lg:pb-14 overflow-hidden"
-      style={{ backgroundColor: "#FDF6EC", backgroundImage: leafPattern }}
+      style={{ backgroundColor: "#FDF6EC" }}
     >
       <div className="relative z-10 max-w-screen-xl mx-auto px-6 lg:px-8">
         <h2 className="font-display text-black text-3xl lg:text-4xl font-bold leading-tight text-center mb-10 lg:mb-12">
@@ -69,7 +67,7 @@ function OurPromise() {
               className="flex flex-col items-center text-center px-2 lg:px-6 transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="mb-6">{p.icon}</div>
-              <h3 className="font-display text-brand text-lg lg:text-xl font-bold leading-snug">
+              <h3 className="font-display text-black text-lg lg:text-xl font-bold leading-snug">
                 {p.title}
               </h3>
             </div>

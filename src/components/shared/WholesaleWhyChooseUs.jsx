@@ -1,6 +1,6 @@
 export default function WholesaleWhyChooseUs() {
   return (
-    <section className="bg-white py-20 lg:py-28 relative overflow-hidden">
+    <section className="bg-white pt-10 lg:pt-12 pb-20 lg:pb-28 relative overflow-hidden">
       {/* Botanical branch accent — bottom-left */}
       <div className="absolute bottom-0 left-0 pointer-events-none select-none opacity-20">
         <svg width="220" height="280" viewBox="0 0 220 280" fill="none" xmlns="http://www.w3.org/2000/svg">

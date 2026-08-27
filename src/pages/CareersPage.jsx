@@ -255,15 +255,15 @@ export default function CareersPage() {
       </section>
 
       {/* ── CTA Banner Section ── */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0057A0" }}>
+      <section className="py-5 lg:py-6" style={{ backgroundColor: "#0057A0" }}>
         <div className="max-w-screen-xl mx-auto px-6 lg:px-8 flex flex-col items-center text-center">
-          <h2 className="font-poppins text-white text-2xl sm:text-3xl lg:text-[34px] font-medium leading-snug mb-4">
+          <h2 className="font-poppins text-white text-lg sm:text-xl lg:text-xl font-medium leading-snug mb-1.5">
             If you don't find your preferred job, then
           </h2>
-          <p className="font-poppins text-white font-bold text-sm sm:text-base leading-relaxed mb-8">
+          <p className="font-poppins text-white font-bold text-xs sm:text-sm leading-relaxed mb-4">
             Upload your resume and we'll match you with relevant opportunities
           </p>
-          <button className="font-poppins text-[#1A1A2E] font-bold text-sm sm:text-base px-8 py-3 bg-white rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+          <button className="font-poppins text-[#1A1A2E] font-bold text-xs sm:text-sm px-6 py-2 bg-white rounded-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
             Upload your resume
           </button>
         </div>
@@ -388,37 +388,37 @@ export default function CareersPage() {
           `}</style>
           <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2">
             {/* Dream */}
-            <div data-grid-card className="grid-card relative overflow-hidden aspect-square sm:aspect-[4/3] cursor-pointer">
+            <div data-grid-card className="grid-card relative overflow-hidden aspect-[16/10] sm:aspect-[16/9] cursor-pointer">
               <img src={teafarmingImg} alt="Dream" className="grid-card-img absolute inset-0 w-full h-full object-cover transition-transform duration-[0.4s] ease-out" />
               <div className="grid-card-overlay absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-[0.4s] opacity-40" />
-              <span className="grid-card-label absolute bottom-[30px] left-[30px] font-poppins text-white font-bold text-[28px] lg:text-[32px] transition-all duration-[0.4s]">
+              <span className="grid-card-label absolute bottom-[20px] left-[20px] font-poppins text-white font-bold text-[22px] lg:text-[26px] transition-all duration-[0.4s]">
                 Dream
               </span>
             </div>
 
             {/* Develop */}
-            <div data-grid-card className="grid-card relative overflow-hidden aspect-square sm:aspect-[4/3] cursor-pointer">
+            <div data-grid-card className="grid-card relative overflow-hidden aspect-[16/10] sm:aspect-[16/9] cursor-pointer">
               <img src={teafarmingImg} alt="Develop" className="grid-card-img absolute inset-0 w-full h-full object-cover transition-transform duration-[0.4s] ease-out" />
               <div className="grid-card-overlay absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-[0.4s] opacity-40" />
-              <span className="grid-card-label absolute bottom-[30px] left-[30px] font-poppins text-white font-bold text-[28px] lg:text-[32px] transition-all duration-[0.4s]">
+              <span className="grid-card-label absolute bottom-[20px] left-[20px] font-poppins text-white font-bold text-[22px] lg:text-[26px] transition-all duration-[0.4s]">
                 Develop
               </span>
             </div>
 
             {/* Deliver */}
-            <div data-grid-card className="grid-card relative overflow-hidden aspect-square sm:aspect-[4/3] cursor-pointer">
+            <div data-grid-card className="grid-card relative overflow-hidden aspect-[16/10] sm:aspect-[16/9] cursor-pointer">
               <img src={teafarmingImg} alt="Deliver" className="grid-card-img absolute inset-0 w-full h-full object-cover transition-transform duration-[0.4s] ease-out" />
               <div className="grid-card-overlay absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-[0.4s] opacity-40" />
-              <span className="grid-card-label absolute bottom-[30px] left-[30px] font-poppins text-white font-bold text-[28px] lg:text-[32px] transition-all duration-[0.4s]">
+              <span className="grid-card-label absolute bottom-[20px] left-[20px] font-poppins text-white font-bold text-[22px] lg:text-[26px] transition-all duration-[0.4s]">
                 Deliver
               </span>
             </div>
 
             {/* Drive */}
-            <div data-grid-card className="grid-card relative overflow-hidden aspect-square sm:aspect-[4/3] cursor-pointer">
+            <div data-grid-card className="grid-card relative overflow-hidden aspect-[16/10] sm:aspect-[16/9] cursor-pointer">
               <img src={teafarmingImg} alt="Drive" className="grid-card-img absolute inset-0 w-full h-full object-cover transition-transform duration-[0.4s] ease-out" />
               <div className="grid-card-overlay absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-[0.4s] opacity-40" />
-              <span className="grid-card-label absolute bottom-[30px] left-[30px] font-poppins text-white font-bold text-[28px] lg:text-[32px] transition-all duration-[0.4s]">
+              <span className="grid-card-label absolute bottom-[20px] left-[20px] font-poppins text-white font-bold text-[22px] lg:text-[26px] transition-all duration-[0.4s]">
                 Drive
               </span>
             </div>
@@ -438,3 +438,4 @@ export default function CareersPage() {
     </>
   );
 }
+

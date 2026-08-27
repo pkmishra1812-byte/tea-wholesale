@@ -17,6 +17,7 @@ export default function OfferingHeroBanner({
   title = "Our Offering",
   subtitle = "Premium tea, spices, baby care, and beauty products — sourced with integrity, delivered with excellence.",
   showText = true,
+  short = false,
 }) {
   const SLIDES = propSlides || DEFAULT_SLIDES;
   const [current, setCurrent] = useState(0);
@@ -53,7 +54,7 @@ export default function OfferingHeroBanner({
   };
 
   return (
-    <section className="hero-section relative w-full overflow-hidden bg-charcoal min-h-[300px] sm:min-h-[400px] lg:min-h-[550px] max-h-[820px]">
+    <section className={`relative w-full overflow-hidden bg-charcoal ${short ? "hero-section-short min-h-[300px] sm:min-h-[340px] lg:min-h-[380px] max-h-[720px]" : "hero-section min-h-[300px] sm:min-h-[400px] lg:min-h-[550px] max-h-[820px]"}`}>
       <div className="relative w-full h-full">
         {SLIDES.map((s, i) => {
           const isActive = i === current;
@@ -223,6 +224,9 @@ export default function OfferingHeroBanner({
         .hero-section { height: 55vh; height: 55dvh; }
         @media (min-width: 640px) { .hero-section { height: 65vh; height: 65dvh; } }
         @media (min-width: 1024px) { .hero-section { height: calc(100vh - 124px); height: calc(100dvh - 124px); } }
+        .hero-section-short { height: 52vh; height: 52dvh; }
+        @media (min-width: 640px) { .hero-section-short { height: 56vh; height: 56dvh; } }
+        @media (min-width: 1024px) { .hero-section-short { height: calc(88vh - 124px); height: calc(88dvh - 124px); } }
         @keyframes heroGlide {
           0%   { opacity: 0; transform: translateY(30px) skewY(2deg); }
           100% { opacity: 1; transform: translateY(0) skewY(0); }

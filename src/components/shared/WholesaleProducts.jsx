@@ -6,6 +6,7 @@ import oilImg from "../../assets/banner-new-4.png";
 import grainsImg from "../../assets/banner-3.png";
 import babyImg from "../../assets/kickstar-banner.png";
 import beautyImg from "../../assets/bioqt-banner.png";
+import machineryImg from "../../assets/banner-2.png";
 
 const products = [
   {
@@ -42,7 +43,7 @@ const products = [
     title: "Baby Care",
     desc: "Gentle care for your little ones. Our baby care range is crafted with natural ingredients, ensuring safety and nourishment for delicate skin.",
     image: babyImg,
-    link: "/our-offering/baby-care",
+    link: "/our-offering/baby-care/product",
   },
   {
     title: "Beauty & Wellbeing",
@@ -50,11 +51,17 @@ const products = [
     image: beautyImg,
     link: "/our-offering/beauty-products",
   },
+  {
+    title: "Tea Machinery & Accessories",
+    desc: "Reliable tea processing machinery, packaging equipment, and accessories for estates and blenders — dependable performance, easy maintenance, and support for operations of every scale.",
+    image: machineryImg,
+    link: "/our-offering/tea-machinery",
+  },
 ];
 
 export default function WholesaleProducts() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-white pt-20 lg:pt-28 pb-10 lg:pb-12">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-16">
         {/* ── Heading ── */}
         <div className="text-center mb-14 lg:mb-16">

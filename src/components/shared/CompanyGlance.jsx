@@ -104,10 +104,9 @@ export default function CompanyGlance() {
           style={reveal(sectionInView, 200)}
         >
           <div className="w-full max-w-2xl">
-            <span className="inline-block font-body text-xs lg:text-sm tracking-[0.25em] uppercase text-[#9DB6FF] font-bold mb-5">
+            <p className="font-body text-white/70 uppercase tracking-[0.35em] text-xs lg:text-sm font-semibold mb-4">
               At a Glance
-            </span>
-
+            </p>
             <h2 className="font-display text-white text-4xl sm:text-[44px] lg:text-[48px] xl:text-[52px] font-bold leading-[1.08] tracking-tight mb-7">
               Our company at a glance — quality that a family can trust
             </h2>

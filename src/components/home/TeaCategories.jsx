@@ -7,29 +7,20 @@ import banner4 from "../../assets/banner-new-4.png";
 const categories = [
   { name: "Tea", slug: "/our-offering/tea", img: banner1, brief: "Premium loose-leaf teas sourced from India's finest estates." },
   { name: "Foods", slug: "/our-offering/kitchen-products/rice-pulses-spices", img: banner2, brief: "Authentic whole & ground spices for every kitchen." },
-  { name: "Beauty & Wellbeing", slug: "/our-offering/baby-care", img: banner3, brief: "Gentle, toxin-free care products for your little one." },
+  { name: "Beauty & Wellbeing", slug: "/our-offering/baby-care/product", img: banner3, brief: "Gentle, toxin-free care products for your little one." },
   { name: "Baby Care", slug: "/our-offering/beauty-products", img: banner4, brief: "Natural beauty essentials crafted with traditional wisdom." },
 ];
 
 export default function TeaCategories() {
   return (
-    <section className="pt-16 lg:pt-20 pb-10 lg:pb-14 bg-white">
+    <section className="pt-6 lg:pt-8 pb-10 lg:pb-14 bg-white">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
-        <div className="mb-12 lg:mb-14">
-          <h2 className="font-body text-brand text-xl lg:text-2xl font-bold leading-tight mb-3">
-            Our Business
-          </h2>
-          <h2 className="font-display font-bold text-brand text-2xl sm:text-3xl lg:text-4xl leading-[1.2] tracking-tight max-w-2xl italic">
-            Our Brands are Creating Desire at Scale
-          </h2>
-        </div>
-
-        <div className="flex gap-5 lg:gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-5 lg:gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide [&::-webkit-scrollbar]:hidden lg:justify-center">
           {categories.map((cat) => (
             <Link
               key={cat.slug}
               to={cat.slug}
-               className="group shrink-0 w-[75vw] sm:w-[45vw] lg:w-[23%] snap-start sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col bg-white"
+               className="group shrink-0 w-[70vw] sm:w-[40vw] lg:w-[20%] snap-start sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col bg-white"
             >
               <div className="aspect-[4/3] w-full overflow-hidden relative">
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500 z-10" />

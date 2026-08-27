@@ -102,19 +102,12 @@ export default function SustainabilityInterventions() {
 
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         <h2
-          className={`font-display text-brand text-3xl lg:text-4xl leading-tight font-bold text-center mb-3 lg:mb-4 transition-all duration-700 ${
+          className={`font-display font-bold text-brand text-[22px] sm:text-[22px] lg:text-[32px] leading-[1.15] tracking-tight text-center mb-12 lg:mb-16 transition-all duration-700 ${
             visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
           Our Sustainability Interventions
         </h2>
-        <p
-          className={`font-body text-tea-800 text-sm lg:text-base tracking-wide text-center mb-12 lg:mb-16 transition-all duration-700 ${
-            visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-          }`}
-        >
-          Rooted in Nature, Committed to future
-        </p>
 
         {/* ── Mobile: auto-scrolling carousel (right to left) ── */}
         <div className="sm:hidden -mx-6 overflow-x-auto scrollbar-hide">

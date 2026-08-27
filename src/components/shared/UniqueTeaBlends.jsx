@@ -15,33 +15,33 @@ const COLLECTIONS = [
     id: "primum",
     name: "Primum",
     products: [
-      { name: "Nidhi CTC Tea – 1 kg Zipper", tag: "Pouches Nidhi Gold", price: "490.00", img: img1 },
-      { name: "Handsome X Cardamom Chai – 1 kg", tag: "Pouches Cardamom", price: "520.00", img: img4 },
-      { name: "Nidhi Masala Chai – 1 kg", tag: "Pouches Masala", price: "540.00", img: img5 },
-      { name: "Next Level Assam Black Tea – 1 kg", tag: "Pouches Assam", price: "480.00", img: img2 },
-      { name: "Golden Leaf Darjeeling – 500 g", tag: "Pouches Darjeeling", price: "650.00", img: img8 },
-      { name: "Nidhi CTC Tea – 500 g Zipper", tag: "Pouches Nidhi Gold", price: "260.00", img: img3 },
+      { name: "Next Level CTC Tea", tag: "Premium Tea", price: "10.00", img: img1 },
+      { name: "Next Level CTC Tea", tag: "Premium Tea", price: "20.00", img: img4 },
+      { name: "Next Level CTC Tea", tag: "Premium Tea", price: "100g", img: img5 },
+      { name: "Next Level CTC Tea", tag: "Premium Tea", price: "250g", img: img2 },
+      { name: "Next Level CTC Tea", tag: "Premium Tea", price: "500g", img: img8 },
+      { name: "Next Level CTC Tea", tag: "Zipper Pouches", price: "1 Kg", img: img3 },
     ],
   },
   {
     id: "eliche",
     name: "Eliche",
     products: [
-      { name: "Nidhi Premium Black Tea – 500 g", tag: "Pouches Black", price: "360.00", img: img3 },
-      { name: "Handsome X Ginger Chai – 1 kg", tag: "Pouches Ginger", price: "510.00", img: img4 },
-      { name: "Next Level Green Tea – 250 g", tag: "Pouches Green", price: "285.00", img: img2 },
-      { name: "Nidhi Oolong Tea – 200 g", tag: "Pouches Oolong", price: "430.00", img: img6 },
-      { name: "Golden Leaf Golden Tips – 100 g", tag: "Pouches Premium", price: "720.00", img: img7 },
-      { name: "Next Level Jasmine Green Tea – 250 g", tag: "Pouches Green", price: "340.00", img: img5 },
+      { name: "Next Level Eliche Tea", tag: "Premium Tea", price: "10.00", img: img3 },
+      { name: "Next Level Eliche Tea", tag: "Premium Tea", price: "20.00", img: img4 },
+      { name: "Next Level Eliche Tea", tag: "Premium Tea", price: "100g", img: img2 },
+      { name: "Next Level Eliche Tea", tag: "Premium Tea", price: "250g", img: img6 },
+      { name: "Next Level Eliche Tea", tag: "Premium Tea", price: "500g", img: img7 },
+      { name: "Next Level Eliche Tea", tag: "Zipper Pouches", price: "1 Kg", img: img5 },
     ],
   },
   {
     id: "tappri-special",
     name: "Tappri Special",
     products: [
-      { name: "Nidhi Earl Grey – 250 g", tag: "Pouches Earl Grey", price: "380.00", img: img2 },
-      { name: "Next Level White Tea – 100 g", tag: "Pouches White", price: "410.00", img: img6 },
-      { name: "Nidhi Herbal Tea – 200 g", tag: "Pouches Herbal", price: "320.00", img: img7 },
+      { name: "Tapri Special Strong Tea", tag: "Premium Tea", price: "250g", img: img2 },
+      { name: "Tapri Special Strong Tea", tag: "Premium Tea", price: "500g", img: img6 },
+      { name: "Tapri Special Strong Tea", tag: "Zipper Pouches", price: "1 Kg", img: img7 },
     ],
   },
 ];
@@ -80,9 +80,11 @@ function ProductCard({ product, index, revealed }) {
           {product.name}
         </h3>
         <p className="font-body text-sm text-gray-400 mt-1">{product.tag}</p>
-        <p className="font-body text-base font-bold text-[#A03028] mt-2">
-          {formatPrice(product.price)}
-        </p>
+        {product.price && (
+          <p className="font-body text-base font-bold text-[#A03028] mt-2">
+            {isNaN(Number(product.price)) ? product.price : formatPrice(product.price)}
+          </p>
+        )}
       </div>
     </Link>
   );
@@ -101,14 +103,15 @@ export default function UniqueTeaBlends() {
   }, [activeId]);
 
   return (
-    <section
-      className="py-16 lg:py-24"
-      style={{ backgroundColor: "#FDF6EC" }}
-    >
-      <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
-        <h2 className="font-display text-black text-3xl lg:text-4xl font-bold leading-tight text-center mb-10 lg:mb-12">
-          Our Unique Tea Blends
-        </h2>
+    <>
+      <section
+        className="pt-6 lg:pt-8 pb-16 lg:pb-24"
+        style={{ backgroundColor: "#FDF6EC" }}
+      >
+        <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-black text-3xl lg:text-4xl font-bold leading-tight text-center mb-10 lg:mb-12">
+            Our Unique Tea Blends
+          </h2>
 
         {/* Collection tabs */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
@@ -134,10 +137,11 @@ export default function UniqueTeaBlends() {
           }`}
         >
           {active.products.map((product, idx) => (
-            <ProductCard key={product.name} product={product} index={idx} revealed={revealed} />
+            <ProductCard key={`${active.id}-${idx}`} product={product} index={idx} revealed={revealed} />
           ))}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }

@@ -1,8 +1,6 @@
 // src/components/shared/BestSellerSection.jsx
 import productImg from "../../assets/teafarming.png"; // replace with your tea packet image
 
-const leafPattern = `url("data:image/svg+xml,%3Csvg width='220' height='220' viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A24B' stroke-opacity='0.09' stroke-width='2'%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z'/%3E%3Cpath d='M60 160 Q100 105 140 160 Q100 172 60 160Z' transform='translate(0 50)'/%3E%3Cpath d='M110 30 Q140 60 110 92 Q80 60 110 30Z'/%3E%3Cpath d='M150 120 Q172 145 150 168 Q128 145 150 120Z'/%3E%3C/g%3E%3C/svg%3E")`;
-
 const leftFeatures = [
   { icon: "star", label: "Boosts Immunity" },
   { icon: "cube", label: "Enhances Focus & Energy" },
@@ -87,7 +85,7 @@ export default function BestSellerSection() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ backgroundColor: "#FDF6EC", backgroundImage: leafPattern }}
+      style={{ backgroundColor: "#FDF6EC" }}
     >
       {/* ── Content ── */}
       <div className="pt-16 lg:pt-24 pb-16 lg:pb-24">

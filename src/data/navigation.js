@@ -28,7 +28,7 @@ export const NAV_LINKS = [
       },
       {
         label: "Baby Care",
-        path: "/our-offering/baby-care",
+        path: "/our-offering/baby-care/product",
         items: [
           { label: "Baby Care Product", path: "/our-offering/baby-care/product" },
           { label: "Baby Care Accessories", path: "/our-offering/baby-care/accessories" },
@@ -73,7 +73,7 @@ export const MEGA_MENU_CATEGORIES = [
   {
     id: "baby-care",
     label: "Baby Care",
-    path: "/our-offering/baby-care",
+    path: "/our-offering/baby-care/product",
     subItems: [
       { label: "Baby Care Product", path: "/our-offering/baby-care/product" },
       { label: "Baby Care Accessories", path: "/our-offering/baby-care/accessories" },
@@ -103,6 +103,13 @@ export const NAV_LINKS_RIGHT = [
   { label: "Careers", path: "/careers" },
   { label: "Contact Us", path: "/contact" },
   { label: "Policies", path: "/policies" },
+];
+
+export const BUSINESS_LINKS = [
+  { label: "FMCG", path: "/businesses/fmcg" },
+  { label: "Equipment", path: "/businesses/equipments" },
+  { label: "Services", path: "/businesses/services" },
+  { label: "Wholesale", path: "/wholesale" },
 ];
 
 export const SITE_CONFIG = {

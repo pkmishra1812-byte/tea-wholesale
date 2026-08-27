@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import br1 from "../../assets/brand-logo/br_logo1.png";
 import br2 from "../../assets/brand-logo/br_logo2.png";
 import br3 from "../../assets/brand-logo/br_logo3.png";
@@ -15,16 +15,31 @@ const brands = [
 
 export default function BrandLogos() {
   const [paused, setPaused] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const el = headingRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
 
   return (
     <section className="pt-4 lg:pt-6 pb-6 lg:pb-10 overflow-hidden bg-white">
       {/* Heading */}
-      <div className="text-center mb-8 lg:mb-10 px-6">
-        <h2 className="font-display text-brand text-3xl lg:text-4xl font-bold leading-tight">
-          Our Trusted Brands
-        </h2>
-        <p className="font-body text-tea-800 text-sm mt-2 tracking-wide">
-          Brands We Proudly Work With
+      <div className="text-center mb-12 lg:mb-16 px-6">
+        <p className="font-display text-brand text-[22px] sm:text-[22px] lg:text-[32px] font-bold leading-[1.15] tracking-tight">
+          Brands we Proudly work With
         </p>
       </div>
 
@@ -73,6 +88,17 @@ export default function BrandLogos() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Our Business heading below the strip */}
+      <div className="text-center mt-20 lg:mt-32 px-6" ref={headingRef}>
+        <h3
+          className={`font-display font-bold text-brand text-[22px] sm:text-[22px] lg:text-[32px] leading-[1.15] tracking-tight whitespace-nowrap transition-all duration-700 ${
+            visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+          }`}
+        >
+          Our Brands are Creating Desire at Scale
+        </h3>
       </div>
 
       <style>{`

@@ -50,6 +50,13 @@
 ::-webkit-scrollbar-thumb { @apply bg-tea-400 rounded-full; }
 ::-webkit-scrollbar-thumb:hover { @apply bg-tea-600; }
 
+/* Triple-tested pin behavior */
+.is-pinned {
+  position: fixed !important;
+  z-index: 40;
+  will-change: transform;
+}
+
 /* Page transition */
 .page-enter {
   opacity: 0;

@@ -1,10 +1,11 @@
 // src/pages/ContactPage.jsx
 import { useState } from "react";
 import bannerImg from "../assets/banner-new-1.png";
+import FinalCTA from "../components/company/FinalCTA";
 
 const contactInfo = [
   {
-    label: "OUR LOCATION",
+    label: "Registered Office",
     value: "Village - Bhatara Ghat, Tehshil - Bisfi, Dist. - Madhubani,\nBihar, Pin Code-847122",
   },
   {
@@ -178,6 +179,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* ── CTA ── */}
+      <FinalCTA />
     </>
   );
 }

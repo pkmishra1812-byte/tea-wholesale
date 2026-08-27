@@ -121,9 +121,9 @@ export default function SoyaPage() {
 
                   <Link
                     to={item.path}
-                    className="group/link mt-auto pt-5 inline-flex items-center gap-1.5 font-body text-sm font-bold text-[#a02c2c] hover:text-[#7d1f1f] transition-colors duration-300 w-fit"
+                    className="group/link mt-auto pt-5 inline-flex items-center gap-1.5 font-body text-sm font-bold text-[#0057A0] hover:text-[#003d73] transition-colors duration-300 w-fit"
                   >
-                    <span className="border-b border-transparent group-hover/link:border-[#7d1f1f] transition-colors duration-300 pb-0.5">
+                    <span className="border-b border-transparent group-hover/link:border-[#003d73] transition-colors duration-300 pb-0.5">
                       View Products
                     </span>
                     <svg

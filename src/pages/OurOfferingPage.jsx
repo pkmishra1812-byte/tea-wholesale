@@ -25,7 +25,7 @@ const categories = [
     desc: "Crafted with natural ingredients and inspired by traditional Indian wellness practices, our baby care line includes massage oil, powder, and wash — all dermatologically tested and toxin-free.",
     imageLabel: "Baby Care Category",
     emoji: "👶",
-    link: "/our-offering/baby-care",
+    link: "/our-offering/baby-care/product",
   },
 ];
 
