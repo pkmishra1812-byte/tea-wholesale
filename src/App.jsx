@@ -13,6 +13,7 @@ const HistoryEvolutionPage = lazy(() => import("./pages/HistoryEvolutionPage"));
 const SustainabilityPage = lazy(() => import("./pages/SustainabilityPage"));
 const InnovationPage = lazy(() => import("./pages/InnovationPage"));
 const RnDPage = lazy(() => import("./pages/RnDPage"));
+const MediaCenterPage = lazy(() => import("./pages/MediaCenterPage"));
 const NewsCenterPage = lazy(() => import("./pages/NewsCenterPage"));
 const ISSINewsPage = lazy(() => import("./pages/ISSINewsPage"));
 const EverydayUpdatesPage = lazy(() => import("./pages/EverydayUpdatesPage"));
@@ -72,6 +73,7 @@ export default function App() {
               <Route path="/sustainability" element={<SustainabilityPage />} />
               <Route path="/innovation" element={<InnovationPage />} />
               <Route path="/innovation/r-d" element={<RnDPage />} />
+              <Route path="/media-center" element={<MediaCenterPage />} />
               <Route path="/media-center/news-center" element={<NewsCenterPage />} />
               <Route path="/media-center/issi-news" element={<ISSINewsPage />} />
               <Route path="/media-center/everyday-updates" element={<EverydayUpdatesPage />} />

@@ -93,7 +93,7 @@ export const MEGA_MENU_CATEGORIES = [
 export const NAV_LINKS_RIGHT = [
   {
     label: "Media Center",
-    path: "/blog",
+    path: "/media-center",
     children: [
       { label: "News Room", path: "/media-center/news-center" },
       { label: "ISSI News", path: "/media-center/issi-news" },
